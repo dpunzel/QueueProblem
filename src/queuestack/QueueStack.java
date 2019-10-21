@@ -2,6 +2,11 @@ package queuestack;
 
 import java.util.Stack;
 
+/**
+ * Queue Stack with 2 stacks
+ * popping off the 1st item put onto the stack.
+ * Stack with queue
+ */
 public class QueueStack {
 
     // one stack for enqueue operation
