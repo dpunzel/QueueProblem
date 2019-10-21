@@ -18,7 +18,7 @@ public class QueueStackSingle {
         this.stack.push(item);
     }
 
-    // recursive call utilizing the call stack
+    // recursive call utilizing application stack memory
     public int dequeue() {
         // base case if stack FIFO item found
         if (stack.size() == 1) {
