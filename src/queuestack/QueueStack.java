@@ -23,6 +23,18 @@ public class QueueStack {
     // removing item
     public int dequeue() {
         // no items in the stack
-        if ()
+        if (enqueueStack.isEmpty())
+            throw new RuntimeException("Stacks are empty..");
+
+        // when dequeueStack is empty adding O(N) time
+        if (dequeueStack.isEmpty()) {
+            while (!enqueueStack.isEmpty()) {
+                dequeueStack.push(enqueueStack.pop());
+            }
+        }
+        // pop off an item O(1) time
+        return dequeueStack.pop();
     }
+
+
 }
